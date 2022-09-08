@@ -23,8 +23,8 @@ export const Login = () => {
   });
   const onSubmit = React.useCallback(async (data: LoginFromModel) => {
     await mutateAsync(data, {
-      onSuccess: async (data) => {
-        console.log(data);
+      onSuccess: async ({ data }) => {
+        localStorage.setItem('token', data?.token);
         navigate('/');
       }
     });
