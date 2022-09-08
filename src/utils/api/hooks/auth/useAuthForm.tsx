@@ -1,8 +1,8 @@
 import { useMutation } from 'react-query';
 
-import { LoginFromModel } from '../../../../../pages/Login/components';
-import { SignUpFromModel } from '../../../../../pages/SignUp/components';
-import { requestAuthForm } from '../../../request/auth';
+import { LoginFromModel } from '../../../../pages/Login/components';
+import { SignUpFromModel } from '../../../../pages/SignUp/components';
+import { requestAuthForm } from '../../request/auth';
 
 type AuthParams = 'signup' | 'login';
 
