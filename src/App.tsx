@@ -1,17 +1,26 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { SignUp } from './pages/SignUp';
-import { Login } from './pages/Login';
-import { ROUTES } from './utils/constants';
 
-const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path={ROUTES.SIGNUP} element={<SignUp />} />
-        <Route path={ROUTES.LOGIN} element={<Login />} />
-      </Routes>
-    </BrowserRouter>
-  );
-};
+import { ProtectedRoute } from '@common';
+import { ROUTES } from '@utils/constants';
+
+import { Login } from './pages/Login';
+import { SignUp } from './pages/SignUp';
+
+const App = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path={ROUTES.SIGNUP} element={<SignUp />} />
+      <Route path={ROUTES.LOGIN} element={<Login />} />
+      <Route
+        path={ROUTES.HOME}
+        element={
+          <ProtectedRoute>
+            <div />
+          </ProtectedRoute>
+        }
+      />
+    </Routes>
+  </BrowserRouter>
+);
 
 export default App;
