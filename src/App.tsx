@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { ProtectedRoute } from '@common';
-import { ROUTES } from '@utils/constants';
+import { Main } from '@pages';
+import { ROUTES } from '@utils';
 
 import { Login } from './pages/Login';
 import { SignUp } from './pages/SignUp';
@@ -15,7 +16,7 @@ const App = () => (
         path={ROUTES.HOME}
         element={
           <ProtectedRoute>
-            <div />
+            <Main />
           </ProtectedRoute>
         }
       />

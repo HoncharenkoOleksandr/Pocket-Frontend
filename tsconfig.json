@@ -21,8 +21,7 @@
       "@common/*": ["./common/*"],
       "@pages": ["./pages"],
       "@assets": ["./assets"],
-      "@utils/constants": ["./utils/constants"],
-      "@utils/api": ["./utils/api"],
+      "@utils": ["./utils"],
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],
