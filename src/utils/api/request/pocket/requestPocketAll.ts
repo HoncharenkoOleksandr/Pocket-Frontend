@@ -1,21 +1,8 @@
 import { AxiosRequestConfig } from 'axios';
 
-import { apiRoutes } from '@utils/constants';
+import { apiRoutes } from '@utils';
 
 import { api } from '../../instance';
 
-export interface PocketParams {
-  data: SignUpFromModel;
-  config?: AxiosRequestConfig;
-}
-
-export interface SignUpResponse {
-  data: {
-    msg: string;
-    userId: string;
-    userName: string;
-  };
-}
-
-export const requestPocketAll = ({ data, config }: AuthParam): Promise<RequestAuthForm> =>
+export const requestPocketAll = ({ data, config }: any): Promise<any> =>
   api.post(`${apiRoutes.pocket.all}`, data, { ...config });

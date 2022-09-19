@@ -1,6 +1,6 @@
 import { AxiosRequestConfig } from 'axios';
 
-import { apiRoutes } from '@utils/constants';
+import { apiRoutes } from '@utils';
 
 import { SignUpFromModel } from '../../../../pages/SignUp/components';
 import { api } from '../../instance';
