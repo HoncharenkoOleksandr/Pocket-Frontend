@@ -1,0 +1,58 @@
+.nav {
+    @apply flex flex-col h-screen items-center w-[80px];
+    @apply fixed top-0 left-0 whitespace-nowrap;
+    @apply text-white bg-black font-medium;
+    @apply transition-all duration-300;
+    @apply hover:w-[260px];
+}
+
+/* w- 80*/
+
+.nav:hover .navigation {
+    @apply w-[230px];
+    @apply transition-all duration-300;
+}
+
+.navigation {
+    @apply w-[50px] mt-[20px] overflow-x-hidden z-10;
+    @apply transition-all duration-300;
+}
+
+/*w-50*/
+
+.navigation__item {
+    @apply flex items-center h-[40px] rounded-[3px] my-[17px];
+    @apply hover:cursor-pointer;
+}
+
+.dashboard {
+    @apply bg-white text-black;
+}
+
+.icon__arrow {
+    @apply w-full flex justify-end hover:rotate-90;
+}
+
+.icon__wrapper {
+    @apply flex justify-center items-center;
+    @apply w-[20px] h-[20px] m-[15px];
+}
+
+.user {
+    @apply bg-[#FFFFFF33];
+}
+
+.accordion {
+    @apply mb-0;
+}
+
+.accordion__item__wrapper {
+    @apply ml-[50px];
+    @apply text-[14px] text-[#B2B2B2];
+}
+
+.accordion__item {
+    @apply last:border-b-4 last:border-indigo-500;
+    @apply hover:cursor-pointer hover:text-gray-200;
+}
+
