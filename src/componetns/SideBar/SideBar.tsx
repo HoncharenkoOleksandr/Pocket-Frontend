@@ -1,27 +1,58 @@
+import classnames from 'classnames';
 import React from 'react';
+import { useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
 
-import {IconAccount, IconDashboard, IconSettings} from "@common";
-
-import {Accordion} from "./components";
+import { Icon } from '@common';
+import { ROUTES } from '@utils';
 
 import styles from './SideBar.module.css';
 
-export const SideBar = () => (
-  <nav className={styles.nav}>
-    <div className={styles.navigation}>
-      <div className={`${styles.navigation__item} ${styles.dashboard}`}>
-        <div className={styles.icon__wrapper}><IconDashboard/></div>
-        Dashboard
+const navMock = [
+  {
+    id: 0,
+    title: 'Dashboard',
+    iconName: 'Dashboard',
+    to: ROUTES.DASHBOARD
+  },
+  {
+    id: 1,
+    title: 'Accounts & Users',
+    iconName: 'Accounts',
+    to: ROUTES.ACCOUNTS
+
+  },
+  {
+    id: 2,
+    title: 'Pocket',
+    iconName: 'Pocket', // you can add a extra prop hire
+    to: ROUTES.POCKET
+
+  },
+  {
+    id: 3,
+    title: 'Settings',
+    iconName: 'Settings',
+    to: ROUTES.SETTINGS
+  }
+]
+
+export const SideBar = () => {
+  const { pathname } = useLocation();
+  // TODO: Add a Accordion
+  return (
+    <nav className={styles.nav}>
+      <div className={styles.navigation}>
+        {navMock.map(nav => (
+          <div key={nav.id}>
+            <Link to={nav.to}  className={classnames(styles.navigation__item, styles.dashboard, pathname === nav.to && styles.active)}>
+              <div className={styles.icon__wrapper}><Icon name={nav.iconName}/></div>
+              {nav.title}
+            </Link>
+          </div>
+        ))
+        }
       </div>
-      <div className={`${styles.navigation__item} ${styles.user}`}>
-        <div className={styles.icon__wrapper}><IconAccount/></div>
-        Accounts & Users
-      </div>
-      <Accordion/>
-      <div className={`${styles.navigation__item} ${styles.settings}`}>
-        <div className={styles.icon__wrapper}><IconSettings/></div>
-        <div>Settings</div>
-      </div>
-    </div>
-  </nav>
-);
+    </nav>
+  )
+};

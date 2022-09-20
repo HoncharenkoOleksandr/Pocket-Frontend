@@ -13,9 +13,10 @@ export const Accordion = () => {
 
     return (
         <>
-            {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
             <div className={`${styles.navigation__item} ${styles.accordion}`} onClick={onAccordionClick}
-                 onKeyDown={onAccordionClick}>
+                 onKeyDown={onAccordionClick}
+                 aria-hidden="true"
+            >
                 <div className={styles.icon__wrapper}><IconPocket/></div>
                 <div>Pocket</div>
                 <div className={styles.icon__arrow}><IconArrow transformValue={isActive ? 180 : 0}/></div>

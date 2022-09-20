@@ -21,11 +21,13 @@
 /*w-50*/
 
 .navigation__item {
-    @apply flex items-center h-[40px] rounded-[3px] my-[17px];
+    @apply flex items-center h-[40px] rounded-[3px] my-[17px] duration-300;
+    @apply text-white no-underline;
     @apply hover:cursor-pointer;
+    @apply hover:bg-[#FFFFFF33];
 }
 
-.dashboard {
+.active {
     @apply bg-white text-black;
 }
 
@@ -36,10 +38,6 @@
 .icon__wrapper {
     @apply flex justify-center items-center;
     @apply w-[20px] h-[20px] m-[15px];
-}
-
-.user {
-    @apply bg-[#FFFFFF33];
 }
 
 .accordion {
