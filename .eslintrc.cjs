@@ -22,8 +22,6 @@ module.exports = {
     },
     plugins: ['react', '@typescript-eslint', 'prettier', 'simple-import-sort'],
     rules: {
-        'no-restricted-exports': 'off',
-        "eol-last": 1,
         'react/prop-types': 0,
         'react/react-in-jsx-scope': 0,
         '@typescript-eslint/no-shadow': 0,
