@@ -1,1 +1,4 @@
-import React from 'react';const Test = () => <div>Test</div>;export default Test;
+import React from 'react';
+
+const Test = () => <span>asdasd</span>;
+export default Test;
