@@ -13,7 +13,7 @@ const App = () => (
       <Route path={ROUTES.SIGNUP} element={<SignUp />} />
       <Route path={ROUTES.LOGIN} element={<Login />} />
       <Route
-        path={ROUTES.HOME}
+        path={ROUTES.DASHBOARD}
         element={
           <ProtectedRoute>
             <Main />

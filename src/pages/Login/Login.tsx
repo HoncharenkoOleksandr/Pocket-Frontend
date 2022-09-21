@@ -4,8 +4,7 @@ import { useNavigate } from 'react-router';
 
 import AuthFrame from '@assets/images/AuthFrame.svg';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { useAuthForm } from '@utils/api';
-import { config } from '@utils/constants';
+import { config, useAuthForm } from '@utils';
 
 import { defaultValues, LoginForm, LoginFormSchema, LoginFromModel } from './components';
 
