@@ -3,7 +3,9 @@ export const apiRoutes = {
     login: 'auth/login',
     signup: 'users/signup'
   },
-  users: 'users',
+  users: {
+    me: 'users/me'
+  },
   pocket: {
     all: 'pocket/all',
     create: 'pocket/create'
