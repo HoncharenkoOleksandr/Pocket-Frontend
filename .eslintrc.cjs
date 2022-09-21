@@ -39,7 +39,7 @@ module.exports = {
         'react/jsx-props-no-spreading': 0,
         'react/require-default-props': 0,
         'react/button-has-type': 0,
-        'react/no-unstable-nested-components': [2, { allowAsProps: true }],
+        'react/no-unstable-nested-components': [2, {allowAsProps: true}],
         'react/no-array-index-key': 0,
         'class-methods-use-this': 0,
         'no-param-reassign': 0,
