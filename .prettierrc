@@ -8,5 +8,5 @@
   "arrowParens": "always",
   "useTabs": false,
   "bracketSpacing": true,
-  "endOfLine": "cr"
+  "endOfLine": "auto"
 }

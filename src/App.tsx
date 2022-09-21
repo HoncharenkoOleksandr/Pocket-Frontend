@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import { ProtectedRoute } from '@common';
+import { ProtectedRoute } from '@components';
 import { Main } from '@pages';
 import { ROUTES } from '@utils';
 
@@ -23,5 +23,4 @@ const App = () => (
     </Routes>
   </BrowserRouter>
 );
-
 export default App;
