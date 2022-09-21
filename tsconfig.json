@@ -19,6 +19,7 @@
     "paths": {
       "@common": ["./common"],
       "@common/*": ["./common/*"],
+      "@components": ["./components"],
       "@pages": ["./pages"],
       "@assets": ["./assets"],
       "@utils": ["./utils"],

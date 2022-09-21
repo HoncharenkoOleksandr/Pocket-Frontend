@@ -1,11 +1,1 @@
-import React from 'react';
-
-import {SideBar} from "../../componetns";
-
-import styles from './Main.module.css';
-
-export const Main = () =>
-    <div className={styles.Main}>
-        <SideBar/>
-        <div>Main</div>
-    </div>;
+import React from 'react';import { Layout } from '@components';export const Main = () => <Layout>asd</Layout>;
