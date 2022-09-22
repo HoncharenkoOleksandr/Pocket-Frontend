@@ -3,8 +3,8 @@ import React from 'react';
 import { useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 
-import { Icon } from '@common';
-import { ROUTES } from '@utils';
+import { Icon, IconLogout } from '@common';
+import { ROUTES, useGetUser } from '@utils';
 
 import styles from './SideBar.module.css';
 
@@ -17,6 +17,8 @@ const navMock = [
 
 export const SideBar = () => {
   const { pathname } = useLocation();
+  const { data } = useGetUser();
+  const userName = data?.data?.name;
   return (
     <nav className={styles.nav}>
       <div className={styles.navigation}>
@@ -37,6 +39,16 @@ export const SideBar = () => {
             </Link>
           </div>
         ))}
+      </div>
+      <div className={styles.user__wrapper}>
+        <div className={styles.divider} />
+        <div className={styles.user}>
+          <div>
+            <span className={styles.user__icon} />
+            <div className={styles.user__name}>{userName}</div>
+          </div>
+          <IconLogout className={styles.logout} />
+        </div>
       </div>
     </nav>
   );
