@@ -27,6 +27,7 @@ module.exports = {
         '@typescript-eslint/no-shadow': 0,
         '@typescript-eslint/no-unused-vars': 1,
         'consistent-return': 0,
+        '@typescript-eslint/explicit-function-return-type': 0,
         'react/function-component-definition': [
             2,
             {
@@ -38,7 +39,7 @@ module.exports = {
         'react/jsx-props-no-spreading': 0,
         'react/require-default-props': 0,
         'react/button-has-type': 0,
-        'react/no-unstable-nested-components': [2, { allowAsProps: true }],
+        'react/no-unstable-nested-components': [2, {allowAsProps: true}],
         'react/no-array-index-key': 0,
         'class-methods-use-this': 0,
         'no-param-reassign': 0,

@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Navigate, Route } from 'react-router';
 
-import { ROUTES } from '@utils/constants';
+import { ROUTES } from '@utils';
 
 type ProtectedRouteProps = {
   children: React.ReactElement;

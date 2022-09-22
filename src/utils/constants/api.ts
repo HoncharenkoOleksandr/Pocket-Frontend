@@ -1,9 +1,15 @@
 export const apiRoutes = {
-  auth: 'auth',
-  login: 'auth/login',
-  signup: 'users/signup',
-  users: 'users',
-  pocket: 'pocket'
+  auth: {
+    login: 'auth/login',
+    signup: 'users/signup'
+  },
+  users: {
+    me: 'users/me'
+  },
+  pocket: {
+    all: 'pocket/all',
+    create: 'pocket/create'
+  }
 };
 
 export const config = {};

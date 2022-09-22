@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import { ProtectedRoute } from '@common';
-import { ROUTES } from '@utils/constants';
+import { ProtectedRoute } from '@components';
+import { Main } from '@pages';
+import { ROUTES } from '@utils';
 
 import { Login } from './pages/Login';
 import { SignUp } from './pages/SignUp';
@@ -12,15 +13,14 @@ const App = () => (
       <Route path={ROUTES.SIGNUP} element={<SignUp />} />
       <Route path={ROUTES.LOGIN} element={<Login />} />
       <Route
-        path={ROUTES.HOME}
+        path={ROUTES.DASHBOARD}
         element={
           <ProtectedRoute>
-            <div />
+            <Main />
           </ProtectedRoute>
         }
       />
     </Routes>
   </BrowserRouter>
 );
-
 export default App;
