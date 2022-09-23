@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import AuthFrame from '@assets/images/AuthFrame.svg';
 import { Divider } from '@common';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { config, useAuthForm  } from '@utils';
+import { config, useAuthForm } from '@utils';
 
 import { defaultValues, SignUpForm, SignUpFormSchema, SignUpFromModel } from './components';
 

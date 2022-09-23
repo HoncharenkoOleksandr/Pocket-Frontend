@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig } from 'axios';
 
 export const api = axios.create({
-  baseURL: 'https://pocket--backend.herokuapp.com',
+  baseURL: 'https://pocket--backend.herokuapp.com'
 });
 
 api.interceptors.request.use<AxiosRequestConfig>((config: AxiosRequestConfig) => {

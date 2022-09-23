@@ -1,27 +1,27 @@
 .container {
-    @apply flex w-screen h-screen justify-center items-center bg-black;
+  @apply flex w-screen h-screen justify-center items-center bg-black;
 }
 
 .content {
-    @apply flex bg-white w-10/12 max-w-screen-md overflow-hidden max-h-[500px];
+  @apply flex bg-white w-10/12 max-w-screen-md overflow-hidden max-h-[500px];
 }
 
 .form__wrapper {
-    @apply w-6/12 p-11
+  @apply w-6/12 p-11;
 }
 
 .image__wrapper {
-    @apply w-6/12
+  @apply w-6/12;
 }
 
 .image {
-    @apply h-full
+  @apply h-full;
 }
 
 .logo {
-    @apply text-white absolute top-20 text-3xl font-black
+  @apply text-white absolute top-20 text-3xl font-black;
 }
 
 .error {
-    @apply text-error text-xs;
+  @apply text-error text-xs;
 }

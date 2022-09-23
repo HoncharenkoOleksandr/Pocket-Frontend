@@ -1,7 +1,7 @@
 .button {
-    @apply w-full py-3;
-    @apply bg-primary;
-    @apply hover:bg-purple duration-300;
-    @apply rounded border-none cursor-pointer;
-    @apply  text-white text-sm font-semibold tracking-wide;
+  @apply w-full py-3;
+  @apply bg-primary;
+  @apply hover:bg-purple duration-300;
+  @apply rounded border-none cursor-pointer;
+  @apply text-white text-sm font-semibold tracking-wide;
 }

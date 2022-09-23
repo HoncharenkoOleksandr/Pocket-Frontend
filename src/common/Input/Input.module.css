@@ -1,19 +1,19 @@
 .input__wrapper {
-    @apply flex flex-col;
-    @apply my-2;
+  @apply flex flex-col;
+  @apply my-2;
 }
 
 .input {
-    @apply bg-gray-light border-gray;
-    @apply px-2.5 py-3;
-    @apply rounded border border-primary;
-    @apply font-semibold;
+  @apply bg-gray-light border-gray;
+  @apply px-2.5 py-3;
+  @apply rounded border border-primary;
+  @apply font-semibold;
 }
 
 .error {
-    @apply text-error text-xs;
+  @apply text-error text-xs;
 }
 
 .label {
-    @apply text-primary text-sm;
+  @apply text-primary text-sm;
 }

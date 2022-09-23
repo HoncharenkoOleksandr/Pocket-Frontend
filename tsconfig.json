@@ -22,7 +22,7 @@
       "@components": ["./components"],
       "@pages": ["./pages"],
       "@assets": ["./assets"],
-      "@utils": ["./utils"],
+      "@utils": ["./utils"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],
