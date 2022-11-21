@@ -1,11 +1,11 @@
 .container {
-    @apply flex items-center my-2;
+  @apply flex items-center my-2;
 }
 
 .line {
-    @apply flex-grow border-2 border-black h-1;
+  @apply flex-grow border-2 border-black h-1;
 }
 
 .title {
-    @apply mx-4 flex-shrink text-gray-400
+  @apply mx-4 flex-shrink text-gray-400;
 }

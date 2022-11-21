@@ -6,18 +6,17 @@ interface IconProps {
   name: string;
 }
 
-export const Icon: FC<IconProps> = ({name}) => {
-  switch (name){
+export const Icon: FC<IconProps> = ({ name }) => {
+  switch (name) {
     case 'Dashboard':
-      return <IconDashboard />
+      return <IconDashboard />;
     case 'Accounts':
-      return <IconAccount />
+      return <IconAccount />;
     case 'Settings':
-      return <IconSettings />
+      return <IconSettings />;
     case 'Pocket':
-      return <IconPocket />
+      return <IconPocket />;
     default:
-      return <span>No image found!</span>
+      return <span>No image found!</span>;
   }
 };
-
