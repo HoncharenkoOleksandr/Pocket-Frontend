@@ -3,7 +3,7 @@
 }
 
 .content {
-  @apply flex bg-white w-10/12 max-w-screen-md overflow-hidden max-h-[500px];
+  @apply flex bg-white w-10/12 max-w-screen-md overflow-hidden max-h-[500px] rounded-lg;
 }
 
 .form__wrapper {

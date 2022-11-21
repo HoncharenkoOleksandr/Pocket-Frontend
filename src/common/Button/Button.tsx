@@ -1,4 +1,5 @@
 import classnames from 'classnames';
+import { motion } from 'framer-motion';
 import React from 'react';
 
 import styles from './Button.module.css';
@@ -24,10 +25,12 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   const classes = classnames(styles.button, styles[variant]);
   return (
-    <button className={classes} disabled={loading || disabled} {...props}>
-      {!!startIcon && <span>{startIcon}</span>}
-      {!loading && children}
-      {!!endIcon && <span>{endIcon}</span>}
-    </button>
+    <motion.div whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.9 }}>
+      <button className={classes} disabled={loading || disabled} {...props}>
+        {!!startIcon && <span>{startIcon}</span>}
+        {!loading && children}
+        {!!endIcon && <span>{endIcon}</span>}
+      </button>
+    </motion.div>
   );
 };
