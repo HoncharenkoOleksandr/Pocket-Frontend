@@ -4,5 +4,5 @@ import { apiRoutes } from '@utils';
 
 import { api } from '../../instance';
 
-export const requestPocketAll = ({ data, config }: any): Promise<any> =>
-  api.post(`${apiRoutes.pocket.all}`, data, { ...config });
+export const requestPocketAll = ({ config }: any): Promise<any> =>
+  api.get(`${apiRoutes.pocket.all}`, { ...config });

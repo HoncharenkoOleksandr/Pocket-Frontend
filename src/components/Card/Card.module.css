@@ -1,0 +1,19 @@
+.card {
+  @apply block rounded-2xl overflow-hidden border-gray bg-gray decoration-0;
+}
+
+.card__preview {
+  @apply w-full;
+}
+
+.card__preview__image {
+  @apply w-full;
+}
+
+.card__info {
+  @apply p-3 flex flex-col;
+}
+
+.card__info span {
+  @apply text-black font-semibold text-sm;
+}
