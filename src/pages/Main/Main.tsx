@@ -15,7 +15,14 @@ export const Main = () => {
       <section className={styles.cards__wrapper}>
         {pocket &&
           pocket.map((element: any) => (
-            <Card name={element.name} date={element.date} desc={element.desc} link={element.link} />
+            <Card
+              name={element.name}
+              date={element.date}
+              description={element.description}
+              link={element.link}
+              title={element.title}
+              image={element.image}
+            />
           ))}
       </section>
     </Layout>
