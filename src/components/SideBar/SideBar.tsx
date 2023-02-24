@@ -3,6 +3,7 @@ import React from 'react';
 import { useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 
+import NoAvatar from '@assets/images/NoAvatar.png';
 import { Icon, IconLogout } from '@common';
 import { ROUTES, useGetUser } from '@utils';
 
@@ -44,7 +45,8 @@ export const SideBar = () => {
         <div className={styles.divider} />
         <div className={styles.user}>
           <div>
-            <span className={styles.user__icon} />
+            {/* <span className={styles.user__icon} /> */}
+            <img src={NoAvatar} className={styles.user__icon} alt='No Avatar' />
             <div className={styles.user__name}>{userName}</div>
           </div>
           <IconLogout className={styles.logout} />
